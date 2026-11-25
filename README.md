@@ -304,3 +304,19 @@ title's data folder.
 ## License
 
 GPL-3.0-or-later. See [LICENSE](LICENSE).
+
+## Hyphen GUI (Hyphen.bat)
+
+`Hyphen.bat` is a one-file Windows manager for this fork. Double-click it from the repo root. It is a batch file with PowerShell embedded, so nothing needs installing. Settings are saved next to it in `hyphen_gui.json`.
+
+What it does:
+
+- Settings box: pick the game folder, game file, cache folder, data folder and launch program with Browse buttons. Shader jobs can be set by hand or automatically from your CPU threads.
+- Actions grid: Full Setup (F5) syncs, builds, compiles shaders and launches. Sync + Build (F6), Compile Shaders (F7), Launch Game (F8), Stop, Check for Updates, Open Cache Folder, Move old files, Update from ZIP and Clear Log.
+- Live status: overall, step and current-file progress bars with ETA and write speed. Tiles show CPU (with temperature), RAM, GPU, VRAM and running processes, and fill as usage rises. DXIL and D3D12 cache tiles show file counts, size and shader progress with ETA.
+- Latest files written: the exact file being written right now, with size, age and write speed.
+- Log: the full output of every step.
+- Layout: every box can be resized by dragging its title line. The Drag, Fold and Panes buttons next to the music tab change how resizing works. The Layout button switches between Detailed and Minimal.
+- Also included: `Hyphen_option1_detailed.bat` and `Hyphen_option3_minimal.bat` open with a fixed Detailed or Minimal layout.
+
+The GUI only runs the repo's own build and the game you supply. It contains no game files.
